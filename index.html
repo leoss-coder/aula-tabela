@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <!-- style coloca o th e tr uma borda de 1px solid black -->
+    <style>
+        th,td{border: 1px solid black;}
+    /* style coloca o tfoot om a cor de background cyan */
+        tfoot{background-color: cyan;}
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <!-- thead engloba toda a estrutura do cabeçalho. -->
+        <thead>
+            <!-- tr representa uma unica linha.  -->
+            <tr>
+                <!-- th representa as colunas da tabela. -->
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+
+        <!-- tbody representa o corpo dos dados -->
+        <tbody>
+            <!-- tr representa uma unica linha.  -->
+            <tr> 
+                <!--td representa os dados de cada coluna da tabela.  -->
+                <!-- <td colspan="2">produto 1</td> expande a caixa para direita de acordo co a quantidade de colunas da tabela -->
+                 <!-- <td rowspan="2">produto 1</td> expande a caixa para baixo de acordo co a quantidade de linhas da tabela -->
+                <td>produto 1</td>
+                <td>2</td>
+                <td>5$</td>
+                <td>Sim</td>
+
+            </tr>
+        </tbody>
+
+        
+        <!-- tbody representa o corpo dos dados -->
+        <tbody>
+            <!-- tr representa uma unica linha.  -->
+            <tr> 
+                <!--td representa os dados de cada coluna da tabela.  -->
+                <td>produto 2</td>
+                <td>5</td>
+                <td>10$</td>
+                <td>Sim</td>
+
+            </tr>
+        </tbody>
+
+        
+        <!-- tbody representa o corpo dos dados -->
+        <tbody>
+            <!-- tr representa uma unica linha.  -->
+            <tr> 
+                <!--td representa os dados de cada coluna da tabela.  -->
+                <td>produto 3</td>
+                <td>3</td>
+                <td>15$</td>
+                <td>Não</td>
+
+            </tr>
+        </tbody>
+        <!-- <tfoot> representa o roda pé de nossa tabela -->
+        <tfoot>
+            <!-- tr representa uma unica linha.  -->
+            <tr>
+                <!--td representa os dados de cada coluna da tabela.  -->
+                <td colspan="2">Total</td>
+                <td colspan="2">30$</td>
+
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
